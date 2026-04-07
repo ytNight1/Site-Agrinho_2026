@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeria de imagens — agricultura, sustentabilidade e campo em Guarapuava, Paraná. Projeto Agrinho 2026.">
+  <title>Galeria | Agrinho 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── Gallery page extra styles ── */
+    .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+
+    /* === Illustration themes === */
+    .viz-soja {
+      background: linear-gradient(180deg, #b8d4a8 0%, #7aaa8e 40%, #2d5a3d 100%);
+    }
+    .viz-batata {
+      background: linear-gradient(180deg, #e8c96a 0%, #c8772a 45%, #3d2010 100%);
+    }
+    .viz-trigo {
+      background: linear-gradient(180deg, #f0e0b0 0%, #e09840 40%, #8b4513 100%);
+    }
+    .viz-floresta {
+      background: linear-gradient(180deg, #a8d8b8 0%, #4a7c5f 40%, #1a3525 100%);
+    }
+    .viz-rio {
+      background: linear-gradient(180deg, #c8e8f8 0%, #7ab8d0 40%, #1a4a6e 100%);
+    }
+    .viz-trator {
+      background: linear-gradient(180deg, #d0c8b0 0%, #8a7d6e 50%, #3d2010 100%);
+    }
+    .viz-drone {
+      background: linear-gradient(180deg, #c8d8e8 0%, #7898b8 55%, #2d3a4a 100%);
+    }
+    .viz-araucaria {
+      background: linear-gradient(180deg, #d0e8c8 0%, #2d5a3d 50%, #0e2118 100%);
+    }
+    .viz-porchacha {
+      background: linear-gradient(180deg, #e8f4d8 0%, #7aaa8e 45%, #2d5a3d 100%);
+    }
+
+    .gallery-item .gallery-viz svg {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+    }
+
+    /* caption bar always visible below */
+    .gallery-caption-bar {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(14,33,24,.75));
+      padding: 2rem 1rem .8rem;
+      pointer-events: none;
+    }
+    .gallery-caption-bar span {
+      display: block;
+      color: rgba(245,240,230,.9);
+      font-family: var(--font-body);
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .03em;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav" id="main-nav">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-mark">🌿</div>
+    <div class="nav-logo-text">Agrinho 2026<span>Guarapuava · PR</span></div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="agronegocio.html">Agronegócio</a>
+    <a href="sustentabilidade.html">Sustentabilidade</a>
+    <a href="galeria.html" class="active">Galeria</a>
+    <a href="referencias.html" class="nav-cta">Referências</a>
+  </div>
+  <button class="nav-burger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-mobile">
+  <a href="index.html">🏠 Início</a>
+  <a href="sobre.html">📖 Sobre o Projeto</a>
+  <a href="agronegocio.html">🌾 Agronegócio</a>
+  <a href="sustentabilidade.html">🌱 Sustentabilidade</a>
+  <a href="galeria.html">📷 Galeria</a>
+  <a href="referencias.html">📚 Referências</a>
+</div>
+
+<section class="page-hero">
+  <div class="breadcrumb" style="justify-content:center">
+    <a href="index.html">Início</a> › <span>Galeria</span>
+  </div>
+  <span class="label">Visualizações temáticas</span>
+  <h1>Galeria</h1>
+  <p>Representações visuais do campo, da natureza e da sustentabilidade em Guarapuava e no Paraná.</p>
+</section>
+
+<!-- ── Gallery Grid ─────────────────────────────────────── -->
+<section class="section bg-creme">
+  <div class="container">
+
+    <!-- Row 1: wide + tall -->
+    <div class="gallery-grid" style="margin-bottom:1.5rem">
+
+      <!-- Wide: Lavoura de soja -->
+      <div class="gallery-item wide reveal">
+        <div class="gallery-viz viz-soja">
+          <svg viewBox="0 0 800 300" preserveAspectRatio="xMidYMid slice" fill="none">
+            <!-- sky -->
+            <rect width="800" height="150" fill="#c8e6da"/>
+            <circle cx="700" cy="40" r="35" fill="#f5d08a" opacity=".9"/>
+            <!-- clouds -->
+            <ellipse cx="150" cy="50" rx="60" ry="22" fill="white" opacity=".65"/>
+            <ellipse cx="190" cy="44" rx="40" ry="18" fill="white" opacity=".65"/>
+            <ellipse cx="420" cy="55" rx="50" ry="20" fill="white" opacity=".55"/>
+            <!-- horizon hills -->
+            <ellipse cx="400" cy="180" rx="500" ry="80" fill="#4a7c5f"/>
+            <!-- soy rows -->
+            <g opacity=".95">
+              <!-- row 1 -->
+              <ellipse cx="40"  cy="200" rx="14" ry="22" fill="#2d5a3d"/>
+              <ellipse cx="80"  cy="195" rx="14" ry="22" fill="#2d5a3d"/>
+              <ellipse cx="120" cy="198" rx="14" ry="22" fill="#1a3525"/>
+              <ellipse cx="160" cy="192" rx="14" ry="22" fill="#2d5a3d"/>
+              <ellipse cx="200" cy="196" rx="14" ry="22" fill="#2d5a3d"/>
+              <ellipse cx="240" cy="194" rx="14" ry="22" fill="#1a3525"/>
+              <ellipse cx="280" cy="197" rx="14" ry="22" fill="#2d5a3d"/>
+              <ellipse cx="320" cy="193" rx="14" ry="22" fill="#2d5a3d"/>
+              <ellipse cx="360" cy="196" rx="14" ry="22" fill="#1a3525"/>
+              <ellipse cx="400" cy="194" rx="14" ry="22" fill="#2d5a3d"/>
+              <ellipse cx="440" cy="197" rx="14" ry="22" fill="#2d5a3d"/>
+              <ellipse cx="480" cy="193" rx="14" ry="22" fill="#1a3525"/>
+              <ellipse cx="520" cy="196" rx="14" ry="22" fill="#2d5a3d"/>
+              <ellipse cx="560" cy="194" rx="14" ry="22" fill="#2d5a3d"/>
+              <ellipse cx="600" cy="197" rx="14" ry="22" fill="#1a3525"/>
+              <ellipse cx="640" cy="193" rx="14" ry="22" fill="#2d5a3d"/>
+              <ellipse cx="680" cy="196" rx="14" ry="22" fill="#2d5a3d"/>
+              <ellipse cx="720" cy="194" rx="14" ry="22" fill="#1a3525"/>
+              <ellipse cx="760" cy="197" rx="14" ry="22" fill="#2d5a3d"/>
+              <!-- row 2 -->
+              <ellipse cx="60"  cy="230" rx="16" ry="25" fill="#2d5a3d"/>
+              <ellipse cx="100" cy="225" rx="16" ry="25" fill="#1a3525"/>
+              <ellipse cx="140" cy="228" rx="16" ry="25" fill="#2d5a3d"/>
+              <ellipse cx="180" cy="224" rx="16" ry="25" fill="#2d5a3d"/>
+              <ellipse cx="220" cy="227" rx="16" ry="25" fill="#1a3525"/>
+              <ellipse cx="260" cy="225" rx="16" ry="25" fill="#2d5a3d"/>
+              <ellipse cx="300" cy="228" rx="16" ry="25" fill="#2d5a3d"/>
+              <ellipse cx="340" cy="224" rx="16" ry="25" fill="#1a3525"/>
+              <ellipse cx="380" cy="227" rx="16" ry="25" fill="#2d5a3d"/>
+              <ellipse cx="420" cy="225" rx="16" ry="25" fill="#2d5a3d"/>
+              <ellipse cx="460" cy="228" rx="16" ry="25" fill="#1a3525"/>
+              <ellipse cx="500" cy="224" rx="16" ry="25" fill="#2d5a3d"/>
+              <ellipse cx="540" cy="227" rx="16" ry="25" fill="#2d5a3d"/>
+              <ellipse cx="580" cy="225" rx="16" ry="25" fill="#1a3525"/>
+              <ellipse cx="620" cy="228" rx="16" ry="25" fill="#2d5a3d"/>
+              <ellipse cx="660" cy="224" rx="16" ry="25" fill="#2d5a3d"/>
+              <ellipse cx="700" cy="227" rx="16" ry="25" fill="#1a3525"/>
+              <ellipse cx="740" cy="225" rx="16" ry="25" fill="#2d5a3d"/>
+              <ellipse cx="780" cy="228" rx="16" ry="25" fill="#1a3525"/>
+            </g>
+            <!-- ground -->
+            <rect x="0" y="265" width="800" height="35" fill="#3d2010"/>
+          </svg>
+        </div>
+        <span class="gallery-tag">Lavoura</span>
+        <div class="gallery-overlay">
+          <h4>Lavoura de Soja — Guarapuava</h4>
+          <p>A soja é a principal cultura em valor bruto no município, plantada em extensas áreas no terceiro planalto paranaense a mais de 1.000 metros de altitude.</p>
+        </div>
+        <div class="gallery-caption-bar"><span>🌱 Lavoura de Soja — Principal produto de exportação</span></div>
+      </div>
+
+      <!-- Tall: Floresta com Araucária -->
+      <div class="gallery-item tall reveal delay-2">
+        <div class="gallery-viz viz-araucaria">
+          <svg viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice" fill="none">
+            <rect width="300" height="400" fill="#d4e8d4"/>
+            <circle cx="150" cy="50" r="45" fill="#f0e8c8" opacity=".7"/>
+            <!-- araucaria trees -->
+            <line x1="80"  y1="400" x2="80"  y2="180" stroke="#5c3a1e" stroke-width="7"/>
+            <polygon points="80,170 60,220 100,220" fill="#1a3525"/>
+            <polygon points="80,195 55,250 105,250" fill="#1a3525"/>
+            <polygon points="80,220 50,285 110,285" fill="#2d5a3d"/>
+            <polygon points="80,250 45,320 115,320" fill="#2d5a3d"/>
+            <line x1="150" y1="400" x2="150" y2="155" stroke="#5c3a1e" stroke-width="8"/>
+            <polygon points="150,143 125,200 175,200" fill="#1a3525"/>
+            <polygon points="150,170 120,235 180,235" fill="#1a3525"/>
+            <polygon points="150,200 115,270 185,270" fill="#2d5a3d"/>
+            <polygon points="150,232 110,310 190,310" fill="#2d5a3d"/>
+            <line x1="230" y1="400" x2="230" y2="195" stroke="#5c3a1e" stroke-width="6"/>
+            <polygon points="230,185 212,230 248,230" fill="#1a3525"/>
+            <polygon points="230,208 208,260 252,260" fill="#1a3525"/>
+            <polygon points="230,235 205,295 255,295" fill="#2d5a3d"/>
+            <!-- undergrowth -->
+            <ellipse cx="40"  cy="360" rx="35" ry="20" fill="#2d5a3d" opacity=".7"/>
+            <ellipse cx="200" cy="370" rx="40" ry="18" fill="#2d5a3d" opacity=".7"/>
+            <ellipse cx="270" cy="355" rx="30" ry="16" fill="#1a3525" opacity=".7"/>
+          </svg>
+        </div>
+        <span class="gallery-tag">Mata Nativa</span>
+        <div class="gallery-overlay">
+          <h4>Floresta com Araucária</h4>
+          <p>O Pinheiro-do-Paraná é símbolo do estado e espécie ameaçada. Preservar remanescentes desse ecossistema é dever de toda propriedade rural na região.</p>
+        </div>
+        <div class="gallery-caption-bar"><span>🌲 Floresta Ombrófila Mista — Bioma exclusivo do Sul</span></div>
+      </div>
+    </div>
+
+    <!-- Row 2: 3 equal -->
+    <div class="gallery-grid" style="margin-bottom:1.5rem">
+
+      <!-- Batata -->
+      <div class="gallery-item reveal">
+        <div class="gallery-viz viz-batata">
+          <svg viewBox="0 0 300 225" preserveAspectRatio="xMidYMid slice" fill="none">
+            <rect width="300" height="130" fill="#f0d090"/>
+            <rect x="0" y="130" width="300" height="95" fill="#3d2010"/>
+            <!-- soil lines -->
+            <line x1="0" y1="145" x2="300" y2="145" stroke="#5c3a1e" stroke-width="1.5" opacity=".4"/>
+            <line x1="0" y1="162" x2="300" y2="162" stroke="#5c3a1e" stroke-width="1" opacity=".3"/>
+            <!-- potato plants above ground -->
+            <rect x="55"  y="90" width="5" height="40" fill="#4a7c5f"/>
+            <ellipse cx="57"  cy="82" rx="22" ry="14" fill="#2d5a3d"/>
+            <rect x="145" y="85" width="5" height="45" fill="#4a7c5f"/>
+            <ellipse cx="147" cy="77" rx="22" ry="14" fill="#2d5a3d"/>
+            <rect x="230" y="92" width="5" height="38" fill="#4a7c5f"/>
+            <ellipse cx="232" cy="84" rx="22" ry="14" fill="#2d5a3d"/>
+            <!-- potatoes underground -->
+            <ellipse cx="50"  cy="165" rx="22" ry="14" fill="#c8a050"/>
+            <ellipse cx="80"  cy="178" rx="18" ry="11" fill="#b89040"/>
+            <ellipse cx="140" cy="168" rx="20" ry="13" fill="#c8a050"/>
+            <ellipse cx="165" cy="182" rx="16" ry="10" fill="#b89040"/>
+            <ellipse cx="225" cy="162" rx="22" ry="14" fill="#c8a050"/>
+            <ellipse cx="255" cy="175" rx="15" ry="10" fill="#b89040"/>
+            <!-- roots -->
+            <line x1="57"  y1="130" x2="50"  y2="155" stroke="#8b6914" stroke-width="1.5"/>
+            <line x1="57"  y1="130" x2="75"  y2="170" stroke="#8b6914" stroke-width="1.5"/>
+            <line x1="147" y1="130" x2="140" y2="158" stroke="#8b6914" stroke-width="1.5"/>
+            <line x1="232" y1="130" x2="225" y2="152" stroke="#8b6914" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <span class="gallery-tag">Batata</span>
+        <div class="gallery-overlay">
+          <h4>Batata-inglesa — Maior Produtor do PR</h4>
+          <p>Guarapuava é o maior município produtor de batata do Paraná. A altitude e o clima frio criam condições únicas para a cultura.</p>
+        </div>
+        <div class="gallery-caption-bar"><span>🥔 Cultura da Batata — Orgulho do Planalto</span></div>
+      </div>
+
+      <!-- Rio / Mata Ciliar -->
+      <div class="gallery-item reveal delay-1">
+        <div class="gallery-viz viz-rio">
+          <svg viewBox="0 0 300 225" preserveAspectRatio="xMidYMid slice" fill="none">
+            <rect width="300" height="225" fill="#c8e8f8"/>
+            <!-- sky -->
+            <rect width="300" height="100" fill="#d0eef8"/>
+            <!-- riparian forest -->
+            <circle cx="30"  cy="90" r="28" fill="#1a3525"/>
+            <circle cx="55"  cy="80" r="22" fill="#2d5a3d"/>
+            <circle cx="78"  cy="88" r="18" fill="#1a3525"/>
+            <rect x="44" y="105" width="8" height="25" fill="#5c3a1e"/>
+            <circle cx="260" cy="85" r="28" fill="#1a3525"/>
+            <circle cx="235" cy="78" r="22" fill="#2d5a3d"/>
+            <circle cx="215" cy="87" r="18" fill="#1a3525"/>
+            <rect x="248" y="105" width="8" height="25" fill="#5c3a1e"/>
+            <!-- river -->
+            <path d="M0,140 Q50,128 100,135 Q150,142 200,130 Q250,118 300,128 L300,180 Q250,168 200,180 Q150,192 100,182 Q50,172 0,180Z" fill="#7ab8d0"/>
+            <!-- reflections -->
+            <path d="M20,152 Q70,148 120,152" stroke="white" stroke-width="1.5" fill="none" opacity=".5"/>
+            <path d="M150,145 Q200,141 250,145" stroke="white" stroke-width="1.5" fill="none" opacity=".4"/>
+            <!-- grasses at edge -->
+            <line x1="100" y1="140" x2="94"  y2="118" stroke="#4a7c5f" stroke-width="2"/>
+            <line x1="108" y1="138" x2="104" y2="115" stroke="#2d5a3d" stroke-width="2"/>
+            <line x1="195" y1="135" x2="190" y2="112" stroke="#4a7c5f" stroke-width="2"/>
+            <line x1="205" y1="133" x2="200" y2="110" stroke="#2d5a3d" stroke-width="2"/>
+            <!-- ground -->
+            <rect x="0" y="180" width="300" height="45" fill="#4a7c5f"/>
+          </svg>
+        </div>
+        <span class="gallery-tag">Conservação</span>
+        <div class="gallery-overlay">
+          <h4>Matas Ciliares — Rio Jordão</h4>
+          <p>A preservação das matas às margens dos rios garante água limpa, biodiversidade e proteção contra enchentes — benefícios diretos ao produtor.</p>
+        </div>
+        <div class="gallery-caption-bar"><span>💧 Mata Ciliar — Proteção hídrica essencial</span></div>
+      </div>
+
+      <!-- Drone agrícola -->
+      <div class="gallery-item reveal delay-2">
+        <div class="gallery-viz viz-drone">
+          <svg viewBox="0 0 300 225" preserveAspectRatio="xMidYMid slice" fill="none">
+            <rect width="300" height="225" fill="#c8d8e8"/>
+            <!-- sky gradient -->
+            <rect width="300" height="225" fill="url(#skyDrone)"/>
+            <defs>
+              <linearGradient id="skyDrone" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#b0c8e0"/>
+                <stop offset="100%" stop-color="#d8eef8"/>
+              </linearGradient>
+            </defs>
+            <!-- lavoura abaixo -->
+            <ellipse cx="150" cy="210" rx="200" ry="50" fill="#4a7c5f"/>
+            <ellipse cx="150" cy="220" rx="200" ry="40" fill="#2d5a3d"/>
+            <!-- drone body -->
+            <rect x="130" y="70" width="40" height="25" rx="6" fill="#3a3a4a"/>
+            <rect x="138" y="65" width="24" height="8" rx="3" fill="#5a5a6a"/>
+            <!-- camera -->
+            <circle cx="150" cy="97" r="7" fill="#1a1a28"/>
+            <circle cx="150" cy="97" r="4" fill="#2d2d42" opacity=".8"/>
+            <!-- arms -->
+            <line x1="130" y1="75" x2="98"  y2="60" stroke="#5a5a6a" stroke-width="3"/>
+            <line x1="170" y1="75" x2="202" y2="60" stroke="#5a5a6a" stroke-width="3"/>
+            <line x1="130" y1="88" x2="98"  y2="103" stroke="#5a5a6a" stroke-width="3"/>
+            <line x1="170" y1="88" x2="202" y2="103" stroke="#5a5a6a" stroke-width="3"/>
+            <!-- rotors -->
+            <ellipse cx="98"  cy="60"  rx="18" ry="4" fill="#c8772a" opacity=".75"/>
+            <ellipse cx="202" cy="60"  rx="18" ry="4" fill="#c8772a" opacity=".75"/>
+            <ellipse cx="98"  cy="103" rx="18" ry="4" fill="#c8772a" opacity=".75"/>
+            <ellipse cx="202" cy="103" rx="18" ry="4" fill="#c8772a" opacity=".75"/>
+            <!-- spray lines -->
+            <path d="M140,100 Q130,130 115,160" stroke="#7ab8d0" stroke-width="2" fill="none" opacity=".6" stroke-dasharray="4,3"/>
+            <path d="M150,100 Q150,132 150,162" stroke="#7ab8d0" stroke-width="2" fill="none" opacity=".6" stroke-dasharray="4,3"/>
+            <path d="M160,100 Q170,130 185,160" stroke="#7ab8d0" stroke-width="2" fill="none" opacity=".6" stroke-dasharray="4,3"/>
+            <!-- signal waves -->
+            <path d="M160,68 Q170,63 180,68" stroke="#e09840" stroke-width="1.5" fill="none" opacity=".7"/>
+            <path d="M162,62 Q175,55 188,62" stroke="#e09840" stroke-width="1.5" fill="none" opacity=".5"/>
+          </svg>
+        </div>
+        <span class="gallery-tag">Tecnologia</span>
+        <div class="gallery-overlay">
+          <h4>Drone Agrícola — Precisão no Campo</h4>
+          <p>Drones para monitoramento e pulverização reduzem em até 30% o uso de defensivos, protegendo o ambiente e diminuindo custos.</p>
+        </div>
+        <div class="gallery-caption-bar"><span>🤖 Agricultura de Precisão — Tecnologia a serviço do campo</span></div>
+      </div>
+    </div>
+
+    <!-- Row 3: 3 equal -->
+    <div class="gallery-grid" style="margin-bottom:1.5rem">
+
+      <!-- Trigo -->
+      <div class="gallery-item reveal">
+        <div class="gallery-viz viz-trigo">
+          <svg viewBox="0 0 300 225" preserveAspectRatio="xMidYMid slice" fill="none">
+            <rect width="300" height="225" fill="#f0e0a0"/>
+            <rect width="300" height="120" fill="#e8d090"/>
+            <circle cx="260" cy="30" r="30" fill="#f5d08a" opacity=".9"/>
+            <!-- wheat stalks -->
+            <g>
+              <line x1="20"  y1="225" x2="16"  y2="130" stroke="#c8772a" stroke-width="3"/>
+              <ellipse cx="16"  cy="118" rx="8" ry="16" fill="#e09840"/>
+              <line x1="45"  y1="225" x2="43"  y2="120" stroke="#c8772a" stroke-width="3"/>
+              <ellipse cx="43"  cy="108" rx="8" ry="16" fill="#c8772a"/>
+              <line x1="70"  y1="225" x2="68"  y2="128" stroke="#c8772a" stroke-width="3"/>
+              <ellipse cx="68"  cy="116" rx="8" ry="16" fill="#e09840"/>
+              <line x1="95"  y1="225" x2="92"  y2="122" stroke="#c8772a" stroke-width="3"/>
+              <ellipse cx="92"  cy="110" rx="8" ry="16" fill="#c8772a"/>
+              <line x1="120" y1="225" x2="118" y2="126" stroke="#c8772a" stroke-width="3"/>
+              <ellipse cx="118" cy="114" rx="8" ry="16" fill="#e09840"/>
+              <line x1="145" y1="225" x2="143" y2="118" stroke="#c8772a" stroke-width="3"/>
+              <ellipse cx="143" cy="106" rx="8" ry="16" fill="#c8772a"/>
+              <line x1="170" y1="225" x2="168" y2="124" stroke="#c8772a" stroke-width="3"/>
+              <ellipse cx="168" cy="112" rx="8" ry="16" fill="#e09840"/>
+              <line x1="195" y1="225" x2="193" y2="128" stroke="#c8772a" stroke-width="3"/>
+              <ellipse cx="193" cy="116" rx="8" ry="16" fill="#c8772a"/>
+              <line x1="220" y1="225" x2="218" y2="120" stroke="#c8772a" stroke-width="3"/>
+              <ellipse cx="218" cy="108" rx="8" ry="16" fill="#e09840"/>
+              <line x1="245" y1="225" x2="243" y2="126" stroke="#c8772a" stroke-width="3"/>
+              <ellipse cx="243" cy="114" rx="8" ry="16" fill="#c8772a"/>
+              <line x1="270" y1="225" x2="268" y2="122" stroke="#c8772a" stroke-width="3"/>
+              <ellipse cx="268" cy="110" rx="8" ry="16" fill="#e09840"/>
+              <line x1="295" y1="225" x2="293" y2="128" stroke="#c8772a" stroke-width="3"/>
+              <ellipse cx="293" cy="116" rx="8" ry="16" fill="#c8772a"/>
+            </g>
+            <!-- ground -->
+            <rect x="0" y="200" width="300" height="25" fill="#8b4513"/>
+          </svg>
+        </div>
+        <span class="gallery-tag">Trigo</span>
+        <div class="gallery-overlay">
+          <h4>Lavoura de Trigo — Cultura de Inverno</h4>
+          <p>O trigo é a principal cultura de inverno em Guarapuava. O Paraná é o maior produtor nacional, e a região do planalto é referência de qualidade.</p>
+        </div>
+        <div class="gallery-caption-bar"><span>🌾 Trigo — O Paraná é o maior produtor do Brasil</span></div>
+      </div>
+
+      <!-- Plantio direto / solo -->
+      <div class="gallery-item reveal delay-1">
+        <div class="gallery-viz" style="background:linear-gradient(180deg,#d8c8a0 0%,#a08040 40%,#5c3a1e 75%,#2d1c05 100%)">
+          <svg viewBox="0 0 300 225" preserveAspectRatio="xMidYMid slice" fill="none">
+            <!-- surface residue -->
+            <rect width="300" height="90" fill="#d8c8a0"/>
+            <!-- residue cover (mulch) -->
+            <line x1="10"  y1="88" x2="80"  y2="85" stroke="#8b6914" stroke-width="3" stroke-linecap="round"/>
+            <line x1="60"  y1="92" x2="140" y2="88" stroke="#6b4f10" stroke-width="3" stroke-linecap="round"/>
+            <line x1="120" y1="86" x2="200" y2="90" stroke="#8b6914" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="180" y1="91" x2="260" y2="87" stroke="#6b4f10" stroke-width="3" stroke-linecap="round"/>
+            <line x1="240" y1="84" x2="300" y2="88" stroke="#8b6914" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="30"  y1="95" x2="90"  y2="92" stroke="#a08040" stroke-width="2" stroke-linecap="round"/>
+            <line x1="155" y1="93" x2="215" y2="90" stroke="#a08040" stroke-width="2" stroke-linecap="round"/>
+            <!-- soil layers -->
+            <rect x="0" y="95"  width="300" height="22" fill="#8b6914" opacity=".9"/>
+            <rect x="0" y="117" width="300" height="28" fill="#6b4f10" opacity=".95"/>
+            <rect x="0" y="145" width="300" height="35" fill="#4a3008"/>
+            <rect x="0" y="180" width="300" height="45" fill="#2d1c05"/>
+            <!-- seedling emerging -->
+            <rect x="148" y="80" width="4" height="18" fill="#4a7c5f"/>
+            <ellipse cx="150" cy="73" rx="12" ry="9" fill="#2d5a3d"/>
+            <!-- roots going down -->
+            <line x1="150" y1="98"  x2="145" y2="130" stroke="#8b6914" stroke-width="2"/>
+            <line x1="150" y1="98"  x2="158" y2="125" stroke="#8b6914" stroke-width="2"/>
+            <line x1="145" y1="130" x2="138" y2="162" stroke="#6b4f10" stroke-width="1.5"/>
+            <line x1="158" y1="125" x2="165" y2="155" stroke="#6b4f10" stroke-width="1.5"/>
+            <!-- earthworm -->
+            <path d="M200,130 Q215,122 230,130 Q245,138 260,128" stroke="#c8772a" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <circle cx="200" cy="130" r="4" fill="#c8772a"/>
+            <!-- labels -->
+            <rect x="8" y="98"  width="70" height="16" rx="3" fill="rgba(0,0,0,.35)"/>
+            <text x="12" y="110" fill="white" font-size="8.5" font-family="sans-serif">Solo superficial</text>
+            <rect x="8" y="148" width="68" height="16" rx="3" fill="rgba(0,0,0,.35)"/>
+            <text x="12" y="160" fill="white" font-size="8.5" font-family="sans-serif">Subsolo fértil</text>
+          </svg>
+        </div>
+        <span class="gallery-tag">Solo</span>
+        <div class="gallery-overlay">
+          <h4>Sistema de Plantio Direto</h4>
+          <p>A palha sobre o solo protege da erosão, retém umidade e alimenta a biologia do solo. Desenvolvido no Paraná, está presente em 60% das lavouras paranaenses.</p>
+        </div>
+        <div class="gallery-caption-bar"><span>🌱 Plantio Direto — Inovação paranaense para o mundo</span></div>
+      </div>
+
+      <!-- Energia solar -->
+      <div class="gallery-item reveal delay-2">
+        <div class="gallery-viz" style="background:linear-gradient(180deg,#f0d890 0%,#e0c070 35%,#4a7c5f 65%,#1a3525 100%)">
+          <svg viewBox="0 0 300 225" preserveAspectRatio="xMidYMid slice" fill="none">
+            <rect width="300" height="130" fill="#f0d890"/>
+            <circle cx="150" cy="40" r="35" fill="#f5c840" opacity=".9"/>
+            <!-- sun rays -->
+            <line x1="150" y1="0"  x2="150" y2="15" stroke="#f5c840" stroke-width="3" opacity=".6"/>
+            <line x1="185" y1="10" x2="176" y2="22" stroke="#f5c840" stroke-width="2.5" opacity=".6"/>
+            <line x1="200" y1="40" x2="186" y2="40" stroke="#f5c840" stroke-width="2.5" opacity=".6"/>
+            <line x1="115" y1="10" x2="124" y2="22" stroke="#f5c840" stroke-width="2.5" opacity=".6"/>
+            <line x1="100" y1="40" x2="114" y2="40" stroke="#f5c840" stroke-width="2.5" opacity=".6"/>
+            <!-- solar panels -->
+            <rect x="60"  y="105" width="55" height="35" rx="3" fill="#2d3a5a" transform="rotate(-10,87,122)"/>
+            <line x1="60"  y1="118" x2="115" y2="111" stroke="#4a5a7a" stroke-width="1.5"/>
+            <line x1="60"  y1="130" x2="115" y2="123" stroke="#4a5a7a" stroke-width="1.5"/>
+            <line x1="87"  y1="105" x2="83"  y2="140" stroke="#4a5a7a" stroke-width="1.5"/>
+            <rect x="175" y="100" width="55" height="35" rx="3" fill="#2d3a5a" transform="rotate(-10,202,117)"/>
+            <line x1="175" y1="113" x2="230" y2="106" stroke="#4a5a7a" stroke-width="1.5"/>
+            <line x1="175" y1="125" x2="230" y2="118" stroke="#4a5a7a" stroke-width="1.5"/>
+            <line x1="202" y1="100" x2="198" y2="135" stroke="#4a5a7a" stroke-width="1.5"/>
+            <!-- energy lines -->
+            <path d="M87,140 Q120,155 150,150 Q180,145 202,135" stroke="#f5c840" stroke-width="2" fill="none" stroke-dasharray="5,3" opacity=".7"/>
+            <!-- ground / field -->
+            <rect x="0" y="160" width="300" height="65" fill="#2d5a3d"/>
+            <ellipse cx="50"  cy="165" rx="30" ry="12" fill="#4a7c5f" opacity=".6"/>
+            <ellipse cx="250" cy="162" rx="28" ry="11" fill="#4a7c5f" opacity=".6"/>
+            <!-- barn -->
+            <rect x="120" y="135" width="60" height="35" fill="#8a7d6e"/>
+            <polygon points="115,135 180,135 147,115" fill="#7a6d5e"/>
+            <!-- support poles -->
+            <line x1="87"  y1="140" x2="87"  y2="155" stroke="#5c3a1e" stroke-width="3"/>
+            <line x1="202" y1="135" x2="202" y2="155" stroke="#5c3a1e" stroke-width="3"/>
+          </svg>
+        </div>
+        <span class="gallery-tag">Energia</span>
+        <div class="gallery-overlay">
+          <h4>Energia Solar na Propriedade Rural</h4>
+          <p>A adoção de painéis solares em propriedades rurais paranaenses reduziu custos energéticos e a dependência da rede convencional.</p>
+        </div>
+        <div class="gallery-caption-bar"><span>☀️ Energia Solar — Propriedades autossuficientes</span></div>
+      </div>
+    </div>
+
+    <!-- Info note -->
+    <div class="callout reveal" style="margin-top:1rem">
+      <p>As ilustrações desta galeria são representações artísticas criadas especialmente para este projeto, inspiradas na paisagem rural e nas práticas agrícolas de Guarapuava e do Paraná.</p>
+      <cite>— Projeto Agrinho 2026 · Guarapuava, Paraná</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ── Legenda / Contexto ─────────────────────────────── -->
+<section class="section bg-branco">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">Leia mais</span>
+      <h2>Cada imagem conta uma história real</h2>
+      <p>Os temas ilustrados nesta galeria representam realidades do campo paranaense que podem ser conferidas nas fontes listadas na página de referências.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal delay-1" style="text-align:center">
+        <div style="font-size:3rem;margin-bottom:.8rem">🌱</div>
+        <h3 style="font-size:1.1rem">Lavouras Diversas</h3>
+        <p style="font-size:.9rem">Soja, trigo, milho, batata e feijão formam a base da produção de Guarapuava, cada cultura com sua importância econômica e ambiental específica.</p>
+      </div>
+      <div class="card reveal delay-2" style="text-align:center">
+        <div style="font-size:3rem;margin-bottom:.8rem">🌿</div>
+        <h3 style="font-size:1.1rem">Vegetação Nativa</h3>
+        <p style="font-size:.9rem">A Floresta com Araucária, bioma característico do sul do Brasil, ainda encontra refúgio em fragmentos preservados de Guarapuava — um tesouro que precisa de proteção.</p>
+      </div>
+      <div class="card reveal delay-3" style="text-align:center">
+        <div style="font-size:3rem;margin-bottom:.8rem">🔬</div>
+        <h3 style="font-size:1.1rem">Tecnologia e Inovação</h3>
+        <p style="font-size:.9rem">Do drone ao sensor de solo, a tecnologia chegou ao campo paranaense para produzir mais com menos impacto — sem abrir mão da rentabilidade.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem">
+      <a href="referencias.html" class="btn btn-primary">Ver fontes e referências →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="nav-logo" href="index.html">
+          <div class="nav-logo-mark">🌿</div>
+          <div class="nav-logo-text">Agrinho 2026<span>Guarapuava · PR</span></div>
+        </a>
+        <p>Projeto educacional desenvolvido para o Concurso Agrinho 2026, com foco na sustentabilidade do agronegócio em Guarapuava, Paraná.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Páginas</h5>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre o Projeto</a></li>
+          <li><a href="agronegocio.html">Agronegócio</a></li>
+          <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="referencias.html">Referências</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Fontes</h5>
+        <ul>
+          <li><a href="https://www.ibge.gov.br" target="_blank">IBGE</a></li>
+          <li><a href="https://www.embrapa.br" target="_blank">Embrapa</a></li>
+          <li><a href="https://www.faep.com.br" target="_blank">FAEP</a></li>
+          <li><a href="https://www.agricultura.pr.gov.br" target="_blank">SEAB/PR</a></li>
+          <li><a href="https://www.idr.pr.gov.br" target="_blank">IDR-Paraná</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Projeto Agrinho — Guarapuava, Paraná</span>
+      <span>Concurso Agrinho 2026 · SENAR-PR</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
